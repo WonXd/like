@@ -16,7 +16,7 @@ tokens = {
 '3994059216':'C54ADC5ED7985FF0BB0491BA37C92A430F247A3340FBEEEF1ABA5432D1F8030C'
 }
 def get_jwt_token(uid, password):
-    url = f"https://jwtgenchx.vercel.app/token?uid={uid}&password={password}"
+    url = f"https://jwt-gen-api-v2.onrender.com/token?uid={uid}&password={password}"
     try:
         response = requests.get(url)
         if response.status_code == 200:
